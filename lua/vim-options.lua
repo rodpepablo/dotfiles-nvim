@@ -7,5 +7,3 @@ vim.cmd("set shiftwidth=4")
 -- Leader
 vim.g.mapleader = ","
 vim.g.maplocalleader = "\\"
-
-
