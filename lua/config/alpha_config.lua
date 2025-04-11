@@ -25,6 +25,7 @@ function M.buttons(dashboard)
 	return {
 		dashboard.button("e", "  > New file", ":ene <BAR> startinsert <CR>"),
 		dashboard.button("f", "󰈞  > Find file", ":cd $HOME/Documentos/code | Telescope find_files<CR>"),
+		dashboard.button("p", "  > Find in project", ":Telescope git_files<CR>"),
 		dashboard.button("r", "  > Recent", ":Telescope oldfiles<CR>"),
 		dashboard.button("u", "󰚰  > Update plugins", ":Lazy update<CR>"),
 		dashboard.button(
