@@ -1,1 +1,3 @@
 lazy-lock.json
+lua/plugins/vim-be-good.lua
+lua/plugins/local-dev-test.lua
