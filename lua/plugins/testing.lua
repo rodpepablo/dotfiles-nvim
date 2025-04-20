@@ -24,7 +24,7 @@ return {
 				require("neotest").run.run()
 			end)
 
-			vim.keymap.set("n", "<leader>rf", function()
+			vim.keymap.set("n", "<leader>ra", function()
 				require("neotest").run.run(vim.fn.expand("%"))
 			end)
 
