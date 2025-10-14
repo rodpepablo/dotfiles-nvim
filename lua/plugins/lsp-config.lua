@@ -18,13 +18,12 @@ return {
 			"antosha417/nvim-lsp-file-operations",
 		},
 		config = function()
-			local lspconfig = require("lspconfig")
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			lspconfig.lua_ls.setup({ capabilities = capabilities })
-			lspconfig.ts_ls.setup({ capabilities = capabilities })
-			lspconfig.pyright.setup({ capabilities = capabilities })
-			lspconfig.omnisharp.setup({
+			vim.lsp.config("lua_ls", { capabilities = capabilities })
+			vim.lsp.config("ts_ls", { capabilities = capabilities })
+			vim.lsp.config("pyright", { capabilities = capabilities })
+			vim.lsp.config("omnisharp", {
 				cmd = { "OmniSharp", "--languageserver", "--hostPID", tostring(vim.fn.getpid()) },
 				capabilities = capabilities,
 				enable_editorconfig_support = true,
